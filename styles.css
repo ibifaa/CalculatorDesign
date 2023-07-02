@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(8, 25, 33);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    width: 50%;
+    margin: 40px auto;
+    
+}
+
+.btn{
+    display: grid;
+    text-align: center;
+    place-content: center;
+    grid-template-rows: 100px;
+    background-color: rgb(11, 39, 51);
+    color: white;
+    font-size: 2rem;
+    /* border: 2px solid black; */
+    box-shadow: 2px 3px rgb(10, 33, 44);
+    margin: 2px;
+    padding: 5px;
+    align-items: center;
+}
+.display{
+    grid-column: 1/ span 4;
+    background-color: white;
+    color: black;
+}
+
+.cancel{
+    grid-column: 1/ span 2;
+    background-color: rgb(253, 45, 45);
+}
+
+.two-zero{
+    /* grid-column: 1/span 2; */
+}
+
+.equalto{ 
+    background-color: rgb(254, 165, 0);
+}
+
+.plus{
+    /* grid-row-start: 4;
+    grid-row-end: 5; */
+   grid-column-start: 4;
+   grid-row-start: 4;
+   grid-row-end: 6;
+   
+} 
