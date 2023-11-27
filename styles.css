@@ -11,6 +11,8 @@ body{
     
 }
 
+
+
 .btn{
     display: grid;
     text-align: center;
@@ -24,31 +26,72 @@ body{
     margin: 2px;
     padding: 5px;
     align-items: center;
+    
 }
 .display{
     grid-column: 1/ span 4;
     background-color: white;
     color: black;
+    padding: 5px;
+    height: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
-.cancel{
+.display .previous-oparand{
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.display .current-oparand{
+    color: white;
+    font-size: 2.5rem;
+}
+.clear{
     grid-column: 1/ span 2;
     background-color: rgb(253, 45, 45);
 }
+
 
 .two-zero{
     /* grid-column: 1/span 2; */
 }
 
+
+
 .equalto{ 
     background-color: rgb(254, 165, 0);
+     grid-column-start: 3;
+     grid-column-end: 5;
 }
 
 .plus{
     /* grid-row-start: 4;
     grid-row-end: 5; */
-   grid-column-start: 4;
+   /* grid-column-start: 4;
    grid-row-start: 4;
-   grid-row-end: 6;
+   grid-row-end: 5; */
    
 } 
+
+@media screen and (max-width:600px) {
+    .container{
+
+    width: 100%;
+    margin: 5px auto;
+
+    }
+
+    .btn{
+        
+        margin: 1px;
+        padding: 3px;
+        align-items: center;
+        font-size: 1.5rem;
+        
+    }
+}
